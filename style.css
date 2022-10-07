@@ -35,7 +35,24 @@ p {
     flex-flow: column wrap;
     border-left: #303633 4px solid;
     border-bottom: #303633 4px solid;
+
+    animation-duration: 1s;
+    transition-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-name: slidein;
 }
+  
+  @keyframes slidein {
+    0% {
+      opacity: 0;
+      transform: translate3d(100%, 0, 0);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+  }
 
 /* profile image styles */
 .prof-img-container {
